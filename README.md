@@ -1,4 +1,4 @@
-# hugo-website
+# website
 
 The main website for broodjeaap.net
 
@@ -15,7 +15,6 @@ Adding a project: copy an existing project page, then add a card to `site/index.
 
 The `Dockerfile` copies `site/` into nginx.
 
-## GitHub
+## CI
 
-Should push to GitHub mirror automatically:
-https://github.com/broodjeaap/hugo-website
+`.github/workflows/docker-publish.yml` runs on the GitHub mirror of this repo. Every push to `master` (and every `v*.*.*` tag) builds the `Dockerfile` and pushes the image to `ghcr.io/<owner>/<repo>`.
