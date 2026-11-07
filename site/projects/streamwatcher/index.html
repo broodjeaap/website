@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StreamWatcher · BroodjeAap</title>
+  <meta name="description" content="Go web app that watches IP cameras for motion and stores the moments.">
+  <link rel="stylesheet" href="/style.css">
+  <script defer data-domain="broodjeaap.net" src="https://plausible.broodjeaap.net/js/plausible.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">BroodjeAap</a>
+      <nav class="site-nav">
+        <a href="/#projects">Projects</a>
+        <a href="mailto:david@broodjeaap.net">Email</a>
+        <a href="https://github.com/broodjeaap">GitHub</a>
+        <a href="https://gitea.broodjeaap.net/broodjeaap">Forgejo</a>
+        <a href="https://www.linkedin.com/in/david-zessen-10626872/">LinkedIn</a>
+      </nav>
+    </div>
+  </header>
+  <main class="prose">
+    <a class="back" href="/#projects">← All projects</a>
+    <h1>StreamWatcher</h1>
+    <p>A web app written in Go to monitor IP cameras for motion, storing moments when motion is detected.</p>
+    <p>Using <a href="https://gocv.io/">GoCV</a> for most of the heavy lifting.</p>
+    <p>Primarily made to try out Go web development, repo can be found here:</p>
+    <p><a href="https://gitea.broodjeaap.net/broodjeaap/StreamWatcher">https://gitea.broodjeaap.net/broodjeaap/StreamWatcher</a></p>
+    <p>Should probably not be seriously used, there are better alternatives :)</p>
+
+    <h2>App</h2>
+
+    <h3>Streams</h3>
+    <p>IP cameras being monitored can be viewed on the main page:</p>
+    <figure class="shot"><a href="/img/streamwatcher/streams.jpg"><img src="/img/streamwatcher/streams.jpg" width="1155" height="418" alt="Monitored streams overview" loading="lazy"></a></figure>
+
+    <h3>Stream page</h3>
+    <p>The stream view shows the current IP cam view and areas being monitored for motion:</p>
+    <figure class="shot"><a href="/img/streamwatcher/stream.jpg"><img src="/img/streamwatcher/stream.jpg" width="1411" height="1511" alt="Stream view with monitored areas" loading="lazy"></a></figure>
+
+    <h3>Stream add area</h3>
+    <p>Adding a monitored area is as simple as dragging a square onto the view:</p>
+    <figure class="shot"><a href="/img/streamwatcher/stream_add_area.jpg"><img src="/img/streamwatcher/stream_add_area.jpg" width="1561" height="1593" alt="Adding a monitored area" loading="lazy"></a></figure>
+
+    <h3>Stream area view</h3>
+    <p>A stream areas moment can be viewed with a web 'player':</p>
+    <figure class="shot"><a href="/img/streamwatcher/stream_moment_player.jpg"><img src="/img/streamwatcher/stream_moment_player.jpg" width="1387" height="1292" alt="Playing back a recorded moment" loading="lazy"></a></figure>
+  </main>
+</body>
+</html>

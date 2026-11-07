@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GoWatch · BroodjeAap</title>
+  <meta name="description" content="Change detection server in Go: chain filters into a DAG, script with Lua, get notified anywhere.">
+  <link rel="stylesheet" href="/style.css">
+  <script defer data-domain="broodjeaap.net" src="https://plausible.broodjeaap.net/js/plausible.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">BroodjeAap</a>
+      <nav class="site-nav">
+        <a href="/#projects">Projects</a>
+        <a href="mailto:david@broodjeaap.net">Email</a>
+        <a href="https://github.com/broodjeaap">GitHub</a>
+        <a href="https://gitea.broodjeaap.net/broodjeaap">Forgejo</a>
+        <a href="https://www.linkedin.com/in/david-zessen-10626872/">LinkedIn</a>
+      </nav>
+    </div>
+  </header>
+  <main class="prose">
+    <a class="back" href="/#projects">← All projects</a>
+    <h1>GoWatch</h1>
+    <p>A change detection server that can notify through various services, written in Go</p>
+    <p>Some out-of-the-box highlights:</p>
+    <ul>
+      <li>Create watches by connecting filters in a DAG</li>
+      <li>A small runtime footprint, a basic instance uses around 20MB of memory</li>
+      <li>Supports Lua scripting to filter/modify/reduce your data any way you want</li>
+      <li>Send notifications through Discord, Matrix, Slack, Telegram and many more services</li>
+      <li>Disable watches on (repeated) failures</li>
+    </ul>
+    <p>A <code>Watch</code> in GoWatch is made by connecting <code>Filters</code> together:</p>
+    <figure class="shot"><a href="/img/gowatch/watch.png"><img src="/img/gowatch/watch.png" width="1221" height="483" alt="A GoWatch watch built from connected filters" loading="lazy"></a></figure>
+    <p>Stored data is plotted for the user:</p>
+    <figure class="shot"><a href="/img/gowatch/view.png"><img src="/img/gowatch/view.png" width="867" height="429" alt="Plot of stored watch data" loading="lazy"></a></figure>
+    <p>Much more information can be found on the Github page of <a href="https://github.com/broodjeaap/go-watch">GoWatch</a>.</p>
+  </main>
+</body>
+</html>
